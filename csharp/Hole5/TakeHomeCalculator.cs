@@ -10,7 +10,7 @@ namespace Hole5
 
         public TakeHomeCalculator(TaxRate taxRate)
         {
-            taxRate = new TaxRate(taxRate);
+            this.taxRate = taxRate;
         }
 
         public Money NetAmount(Money first, params Money[] rest)
