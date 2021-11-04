@@ -8,9 +8,9 @@ namespace Hole5
     {
         private readonly TaxRate taxRate;
 
-        public TakeHomeCalculator(int percent)
+        public TakeHomeCalculator(TaxRate taxRate)
         {
-            taxRate = new TaxRate(percent);
+            taxRate = new TaxRate(taxRate);
         }
 
         public Money NetAmount(Money first, params Money[] rest)
