@@ -17,5 +17,9 @@ namespace Hole5
             Money tax = Money.Create(Convert.ToInt32(amount), first.currency);
             return tax;
         }
+        public static TaxRate Of(int percent)
+        {
+            return new TaxRate(percent);
+        }
     }
 }
