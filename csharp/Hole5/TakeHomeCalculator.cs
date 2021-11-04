@@ -24,7 +24,7 @@ namespace Hole5
                 total = total.Plus(next);
             }
 
-            var tax = taxRate.Apply(first, total);
+            var tax = taxRate.Apply(total);
 
             return total.Minus(tax);
         }
